@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./src/assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./src/css/styles.css">
-    <title>Document</title>
+    <title>Assistente de Metas 💜</title>
 </head>
 <body>
     <header>
@@ -20,8 +20,8 @@
 
                 <form id="form">
                     <input id="apiKey" type="password" placeholder="Informe a API KEY do Gemini" required>
-                    <select id="gameSelect">
-                        <option value="dragon ball legends z">Dragon ball z Legendes</option>
+                    <select id="gameSelect" required>
+                        <option value="dragon ball legends z">Selecione um jogo</option>
                         <option value="valorant">Valorant</option>
                         <option value="free fire">Free Fire</option>
                         <option value="skullgirs">Skullgirls</option>
@@ -32,7 +32,7 @@
                     <button id="askButton">Perguntar</button>
                 </form>
 
-                <div id="aiResponse">
+                <div id="aiResponse" class="hidden">
                     <div class="response-content">
 
                     </div>
@@ -41,6 +41,7 @@
         </section>
     </main>
 
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
     <script defer src="./src/js/script.js"></script>
 </body>
 </html>
