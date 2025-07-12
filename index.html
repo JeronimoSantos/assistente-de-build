@@ -14,11 +14,33 @@
     
     <main>
         <section>
-            <h2>Assistente de Metas</h2>
-            <p>Dicas de definição de buildin de jogos</p>
+            <div>
+                <h2>Assistente de Metas</h2>
+                <p>Dicas de definição de buildin de jogos</p>
+
+                <form id="form">
+                    <input id="apiKey" type="password" placeholder="Informe a API KEY do Gemini" required>
+                    <select id="gameSelect">
+                        <option value="dragon ball legends z">Dragon ball z Legendes</option>
+                        <option value="valorant">Valorant</option>
+                        <option value="free fire">Free Fire</option>
+                        <option value="skullgirs">Skullgirls</option>
+                        <option value="lol">League of Legends</option>
+                        <option value="cssgo">CS:GO</option>
+                    </select>
+                    <input id="questionInput" type="text" placeholder="EX: Melhor build para Gonha...">
+                    <button id="askButton">Perguntar</button>
+                </form>
+
+                <div id="aiResponse">
+                    <div class="response-content">
+
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <script defer src=""></script>
+    <script defer src="./src/js/script.js"></script>
 </body>
 </html>
